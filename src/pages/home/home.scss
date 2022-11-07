@@ -1,0 +1,44 @@
+@import "../../global.scss";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  padding: 1% 2%;
+
+  .intro {
+    .name {
+      color: black;
+      font-size: 36px;
+      padding-bottom: 1vh;
+      font-weight: 600;
+    }
+    .welcome {
+      color: black;
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @include mobile {
+    .intro{
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .name {
+        font-size: 26px;
+      }
+      .welcome{
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+

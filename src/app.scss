@@ -1,0 +1,8 @@
+.default_layout_app{
+    width: 100vw;
+
+    main{
+        min-height: calc(100vh - 60px - 60px);
+        background-color: lightgrey;
+    }
+}

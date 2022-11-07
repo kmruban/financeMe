@@ -1,0 +1,124 @@
+@import "../../global.scss";
+
+.topbar {
+  height: 60px;
+  display: flex;
+
+  .left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-left: 2.5vw;
+    color: $appBlue;
+
+    a {
+      text-decoration: none;
+      display: flex;
+      .finance {
+        padding: 2.5px;
+        display: flex;
+        font-size: 1.5em;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        color: $appBlue;
+      }
+      .me {
+        background-color: $appBlue;
+        padding: 2.5px;
+        color: white;
+        display: flex;
+        margin-block-start: 0;
+        margin-block-end: 0;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    padding-right: 2.5vw;
+    align-items: center;
+
+    .links {
+      display: flex;
+      height: 100%;
+
+      .dropdown_container {
+        position: relative;
+        height: 100%;
+        padding: 0px 1vw;
+
+        .dropdown_user {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          color: $appBlue;
+
+          div {
+            display: flex;
+            align-items: center;
+            .user {
+              height: 24px;
+              width: 24px;
+            }
+            p {
+              font-size: 16px;
+              font-weight: 500;
+              margin-block-start: 0;
+              margin-block-end: 0;
+              padding-left: 2.5px;
+              padding-right: 5px;
+              min-width: 7.5vw;
+            }
+          }
+          .open_menu {
+            height: 28px;
+            width: 28px;
+            padding: 5px;
+            border-radius: 50%;
+          }
+          .close_menu {
+            height: 28px;
+            width: 28px;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: $appBlueLight;
+          }
+          .open_menu:hover {
+            background-color: $appBlueLight;
+          }
+        }
+
+        .dropdown {
+          position: absolute;
+          width: calc(100%);
+          left: 0vw;
+          background-color: $appBlue;
+
+          ul {
+            margin-block-start: 10px;
+            margin-block-end: 10px;
+            padding-inline-start: 0px;
+            margin-inline-start: 10px;
+
+            li {
+              list-style-type: none;
+              padding: 15px 0px;
+              font-size: 14px;
+              font-weight: 700;
+              padding-left: 5px;
+              color: white;
+              a {
+                color: white;
+                text-decoration: none;
+              }
+            }
+            li:hover {
+              background-color: navy;
+            }
+          }
+        }
+      }
+    }
+  }
+}

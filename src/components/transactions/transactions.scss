@@ -1,0 +1,184 @@
+@import "../../global.scss";
+
+.transaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3vh 0 4vh 0;
+
+  .title {
+    font-size: 30px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 2vh;
+  }
+
+  .transaction_type {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+    button {
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: none;
+      color: black;
+    }
+  }
+
+  .income_modal {
+    position: absolute;
+    background-color: white;
+    height: 30vh;
+    width: 50vw;
+    border-radius: 10px;
+    border: 2px solid $appBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      border-bottom: 2px solid black;
+    }
+
+    form {
+      width: 90%;
+      height: 80%;
+
+      .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .form_content {
+          display: flex;
+          align-items: center;
+          height: 10%;
+
+          label {
+            flex: 2;
+          }
+
+          div {
+            flex: 5;
+            .css-319lph-ValueContainer{
+              flex: 5;
+            }
+            .css-1hb7zxy-IndicatorsContainer{
+              flex: 1;
+            }
+          }
+
+          input {
+            flex: 5;
+            border: none;
+            border-bottom: 1px solid black;
+          }
+
+        }
+
+        .buttons {
+          margin-bottom: 3%;
+
+          .submit {
+            margin-right: 5%;
+          }
+
+          button {
+            padding: 2.5px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .expense_modal {
+    position: absolute;
+    background-color: white;
+    height: 30vh;
+    width: 50vw;
+    border-radius: 10px;
+    border: 2px solid $appBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      border-bottom: 2px solid black;
+    }
+
+    form {
+      width: 90%;
+      height: 80%;
+
+      .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .form_content {
+          display: flex;
+          align-items: center;
+          height: 10%;
+
+          label {
+            flex: 2;
+          }
+
+          div {
+            flex: 5;
+            .css-319lph-ValueContainer{
+              flex: 5;
+            }
+            .css-1hb7zxy-IndicatorsContainer{
+              flex: 1;
+            }
+          }
+
+          input {
+            flex: 5;
+            border: none;
+            border-bottom: 1px solid black;
+          }
+
+        }
+
+        .buttons {
+          margin-bottom: 3%;
+
+          .submit {
+            margin-right: 5%;
+          }
+
+          button {
+            padding: 2.5px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  @include mobile {
+    .transaction_type {
+      width: 62.5%;
+
+      button {
+        padding: 7.5px;
+        font-size: 18px;
+      }
+    }
+    .income_modal{
+      height: 40vh;
+      width: 95vw;
+    }
+    .expense_modal{
+      height: 40vh;
+      width: 95vw;
+    }
+  }
+}

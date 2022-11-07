@@ -1,0 +1,10 @@
+$appBlue: rgb(24, 24, 152);
+$appBlueLight: rgba(9, 104, 206, 0.75);
+$appBlueHover: rgba(9, 104, 206, 0.2);
+
+$mobileWidth: 425px;
+@mixin mobile {
+  @media (max-width: #{$mobileWidth}) {
+    @content;
+  }
+}
